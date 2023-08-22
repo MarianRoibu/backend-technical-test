@@ -1,0 +1,11 @@
+# Ignore all files that start with a dot.
+*.
+
+# Ignore all files that end with a .log extension.
+*.log
+
+# Ignore all files that are located in the node_modules directory.
+node_modules/
+
+# Ignore all files that are located in the .git directory.
+.git/
