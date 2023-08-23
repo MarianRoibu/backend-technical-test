@@ -12,9 +12,16 @@ const generateAndSum = async (count) => {
   const array = generateRandomArray(count);
   const batches = os.cpus().length;
   const promises = [];
+  const progress = [];
   for (let i = 0; i < batches; i++) {
     promises.push(createWorker(array.slice(i * count / batches, (i + 1) * count / batches)));
+    progress.push(`Summing up batch ${i + 1}`);
   }
+
+  for (const message of progress) {
+    console.log(message);
+  }
+
   const results = await Promise.all(promises);
   let sum = 0;
   for (const result of results) {
@@ -26,6 +33,7 @@ const generateAndSum = async (count) => {
 const generateRandomArray = (length) => {
   return Array.from({ length }, () => Math.floor(Math.random() * 1000));
 };
+
 
 const createWorker = (batch) => {
   return new Promise((resolve, reject) => {
