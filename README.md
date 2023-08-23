@@ -1,5 +1,44 @@
-# Candidate Exercise / Backend Engineer for honei
+# Candidate Exercise / Backend Engineer for Honei
 
+## Introduction
+
+This repository contains solutions to the coding exercises provided for the Backend Engineer position at Honei. The exercises are designed to assess your programming and problem-solving skills.
+
+## Getting Started
+
+To get started, follow the instructions below for each exercise:
+
+### Exercise 1: Highest Occurrence
+
+1. Install dependencies: `npm install`
+2. Navigate to the `tests` directory: `cd tests`
+3. Run Jest tests: `npx jest`
+
+### Exercise 2: Maximum Sub Array Sum
+
+1. Install dependencies: `npm install`
+2. Navigate to the `tests` directory: `cd tests`
+3. Run Jest tests: `npx jest`
+
+### Exercise 3: Average Pair
+
+1. Install dependencies: `npm install`
+2. Navigate to the `tests` directory: `cd tests`
+3. Run Jest tests: `npx jest`
+
+### Exercise 4: Parallel Processing
+
+1. Navigate to the `exercise-4` directory: `cd exercise-4`
+2. Install dependencies: `npm install`
+3. Run the server: `node server.js`
+4. Open your browser and go to: [http://localhost:3000/generate-and-sum?count=number](http://localhost:3000/generate-and-sum?count=number)
+   Replace `number` with the desired count of random generated numbers.
+5. The sum result will be displayed in JSON format.
+
+## Contact
+
+If you have any questions or need assistance, feel free to reach out via email at marianroibu32@gmail.com 
+ 
 > Max. duration: 48 hours
 
 ## Exercice 1: Highest Occurrence (optional)
